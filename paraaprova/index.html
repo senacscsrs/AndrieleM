@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Notas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Calculadora de Notas</h1>
+        <p>Digite as notas e descubra se você foi aprovado ou reprovado.</p>
+    </header>
+
+    <main>
+        <section class="formulario">
+            <h2>Insira suas notas</h2>
+
+            <label>Nota 1:</label>
+            <input type="number" id="nota1" min="0" max="10">
+
+            <label>Nota 2:</label>
+            <input type="number" id="nota2" min="0" max="10">
+
+            <label>Nota 3:</label>
+            <input type="number" id="nota3" min="0" max="10">
+
+            <button id="btnCalcular">Calcular Média</button>
+        </section>
+
+        <section id="resultado" class="resultado">
+            <h2>Resultado</h2>
+            <p id="mensagem">Nenhum cálculo realizado ainda.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto de avaliação | HTML • CSS • JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

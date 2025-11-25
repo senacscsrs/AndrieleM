@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Minha Família</title>
+
+    <style>
+
+        body {
+            background-color: #ffd6e8; 
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #d63384; 
+
+        .caixa {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 2px solid #f0a6c9; 
+        }
+
+        .mensagem-especial {
+            color: #c2185b;
+            font-weight: bold;
+        }
+
+        .botao {
+            padding: 10px 14px;
+            background-color: #ff4fa3;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .botao:hover {
+            background-color: #d63384;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Minha Família</h1>
+
+    <div class="caixa">
+        <h2>Sobre nós</h2>
+        <p>Minha família é muito importante para mim e composta por pessoas incríveis.</p>
+        <p>A união e o carinho sempre estiveram presentes na nossa história.</p>
+        <p>A seguir, você verá nomes, curiosidades e mensagens especiais.</p>
+    </div>
+
+    <div class="caixa">
+        <h2>Lista de familiares (gerada com FOR)</h2>
+        <ul id="listaFamilia"></ul>
+    </div>
+
+    <div class="caixa">
+        <h2>Imagem ilustrativa</h2>
+        <img src="euemano.jpeg"Foto ilustrativa da família">
+    </div>
+
+    <div class="caixa">
+        <h2>Mensagem Especial (IF / ELSE)</h2>
+        <button class="botao" onclick="mostrarMensagem()">Mostrar / Ocultar mensagem</button>
+        <p id="msg" class="mensagem-especial" style="display:none;">
+            Minha família é meu maior amor! 💗
+        </p>
+    </div>
+
+    <div class="caixa">
+        <h2>Escolha um familiar (SWITCH)</h2>
+        <button class="botao" onclick="escolherMensagem()">Escolher Pessoa</button>
+        <p id="msgFamiliar"></p>
+    </div>
+
+    <div class="caixa">
+        <h2>Área interativa (evento: onmouseover)</h2>
+        <p id="hoverArea" onmouseover="trocarTexto()" onmouseout="voltarTexto()">
+            Passe o mouse aqui!
+        </p>
+    </div>
+
+    <script>
+
+
+  
+        let nomes = ["Michele (mãe)", "Alexandre (pai)", "Thiago (irmão)"];
+        let momentos = ["Viagem", "Aniversário", "Domingo em família"];
+
+    
+        let lista = document.getElementById("listaFamilia");
+        for (let i = 0; i < nomes.length; i++) {
+            let li = document.createElement("li");
+            li.innerText = nomes[i];
+            lista.appendChild(li);
+        }
+
+        let familiares = [
+            ["Michele", null],
+            ["Alexandre", null],
+            ["Thiago", null]
+        ];
+        console.log("Matriz da família (idades não informadas):", familiares);
+
+        let pessoa = {
+            nome: "Michele",
+            hobby: "Cuidar da família"
+        };
+        console.log("Objeto pessoa:", pessoa);
+
+        let contador = 1;
+        while (contador <= 3) {
+            console.log("Fato legal nº " + contador);
+            contador++;
+        }
+
+        function mostrarMensagem() {
+            let msg = document.getElementById("msg");
+            if (msg.style.display === "none") {
+                msg.style.display = "block";
+            } else {
+                msg.style.display = "none";
+            }
+        }
+
+        function escolherMensagem() {
+            let nome = prompt("Escolha: Michele, Alexandre ou Thiago");
+
+            let texto = "";
+
+            switch (nome) {
+                case "Michele":
+                    texto = "Michele é a base da família, cheia de amor e dedicação!";
+                    break;
+                case "Alexandre":
+                    texto = "Alexandre é forte, presente e muito importante na família!";
+                    break;
+                case "Thiago":
+                    texto = "Thiago traz alegria e energia para todos os dias!";
+                    break;
+                default:
+                    texto = "Nome não encontrado!";
+            }
+
+            document.getElementById("msgFamiliar").innerText = texto;
+        }
+
+     
+        function trocarTexto() {
+            document.getElementById("hoverArea").innerText = "Você passou o mouse! 🌸";
+        }
+
+        function voltarTexto() {
+            document.getElementById("hoverArea").innerText = "Passe o mouse aqui!";
+        }
+
+    </script>
+
+</body>
+</html>
