@@ -1,0 +1,41 @@
+  <style>
+
+        body {
+            background-color: #ff006f; 
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #d63384; 
+
+        .caixa {
+            background-color: rgb(0, 0, 0);
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 2px solid #f0a6c9; 
+        }
+
+        .mensagem-especial {
+            color: #c2185b;
+            font-weight: bold;
+        }
+
+        .botao {
+            padding: 10px 14px;
+            background-color: #ff4fa3;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .botao:hover {
+            background-color: #d63384;
+        }
+eunene {
+      width: 300px;
+}
+    </style>
