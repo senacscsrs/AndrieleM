@@ -14,7 +14,7 @@
             ["Alexandre", null],
             ["Thiago", null]
         ];
-        console.log("Matriz da família (idades não informadas):", familiares);
+        console.log("Matriz da família :", familiares);
 
         let pessoa = {
             nome: "Michele",

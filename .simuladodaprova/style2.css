@@ -1,17 +1,18 @@
-  <style>
 
         body {
-            background-color: #ff006f; 
+            background-color: #f7bfd8; 
             font-family: Arial, sans-serif;
             margin: 20px;
         }
 
         h1 {
             text-align: center;
-            color: #d63384; 
+            color: #fdeaf2; 
+        }
 
         .caixa {
-            background-color: rgb(0, 0, 0);
+            background-color: #fbd5e5;
+            color: #000000;
             padding: 15px;
             margin-bottom: 20px;
             border-radius: 8px;
@@ -35,7 +36,29 @@
         .botao:hover {
             background-color: #d63384;
         }
-eunene {
-      width: 300px;
+
+/* Estilos específicos para a imagem da galeria */
+.comida {
+    width: 300px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
-    </style>
+.casa {
+    width: 300px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.cavalo {
+    width: 300px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
