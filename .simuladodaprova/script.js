@@ -44,13 +44,13 @@
 
             switch (nome) {
                 case "Michele":
-                    texto = "Michele é a base da família, cheia de amor e dedicação!";
+                    texto = "Mãe, você é aquela presença que transforma qualquer dia em um lugar seguro. Seu sorriso me dá calma, sua voz me orienta e seu amor me acolhe mesmo quando o mundo parece grande demais.Obrigada por cada cuidado, cada abraço e cada palavra que me ensinou a seguir em frente.Você é a minha melhor lembrança do passado, a minha força no presente e a minha inspiração para o futuro.Tudo fica mais bonito porque você existe, mãe.";
                     break;
                 case "Alexandre":
-                    texto = "Alexandre é forte, presente e muito importante na família!";
+                    texto = "Pai, você é o exemplo silencioso que sempre me guiou. A sua maneira de ensinar, de proteger e de mostrar o mundo me acompanha em cada passo que dou.Obrigada por acreditar em mim quando eu ainda nem sabia como acreditar em mim mesma. A sua força e sua sabedoria são luzes que iluminam o meu caminho.Tenho orgulho de tudo o que aprendi com você e gratidão eterna por cada esforço que fez por mim.";
                     break;
                 case "Thiago":
-                    texto = "Thiago traz alegria e energia para todos os dias!";
+                    texto = "Irmão, crescer ao seu lado foi um dos maiores presentes que a vida me deu. Compartilhamos risadas, segredos, brigas bobas e momentos que guardo com carinho no coração.";
                     break;
                 default:
                     texto = "Nome não encontrado!";
@@ -61,7 +61,7 @@
 
      
         function trocarTexto() {
-            document.getElementById("hoverArea").innerText = "Você passou o mouse! 🌸";
+            document.getElementById("hoverArea").innerText = "Amo vocês ♡";
         }
 
         function voltarTexto() {
