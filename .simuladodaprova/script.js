@@ -61,7 +61,7 @@
 
      
         function trocarTexto() {
-            document.getElementById("hoverArea").innerText = "Amo vocês ♡";
+            document.getElementById("hoverArea").innerText = "♡";
         }
 
         function voltarTexto() {
